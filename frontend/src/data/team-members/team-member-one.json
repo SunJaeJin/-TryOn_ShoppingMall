@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "image": "/assets/img/team/team-1.jpg",
+    "fbLink": "#!",
+    "twitterLink": "#!",
+    "instagramLink": "#!",
+    "name": "Mr.Mike Banding",
+    "position": "Manager"
+  },
+  {
+    "id": "2",
+    "image": "/assets/img/team/team-3.jpg",
+    "fbLink": "#!",
+    "twitterLink": "#!",
+    "instagramLink": "#!",
+    "name": "Mr.Peter Pan",
+    "position": "Developer"
+  },
+  {
+    "id": "3",
+    "image": "/assets/img/team/team-2.jpg",
+    "fbLink": "#!",
+    "twitterLink": "#!",
+    "instagramLink": "#!",
+    "name": "Ms.Sophia",
+    "position": "Designer"
+  },
+  {
+    "id": "4",
+    "image": "/assets/img/team/team-4.jpg",
+    "fbLink": "#!",
+    "twitterLink": "#!",
+    "instagramLink": "#!",
+    "name": "Mr.John Lee",
+    "position": "Chairman"
+  }
+]

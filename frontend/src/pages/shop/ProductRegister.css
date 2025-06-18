@@ -1,0 +1,301 @@
+/* Google Fonts에서 폰트 임포트 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+
+/* 전체 컨테이너 스타일 */
+.product-register {
+  width: 100%;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.product-register:hover {
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* 상품 등록 제목 스타일 */
+h2 {
+  text-align: center;
+  font-size: 32px; /* 폰트 크기를 키움 */
+  font-weight: 700; /* 굵게 설정 */
+  color: #2c3e50; /* 다크 네이비로 강조 */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif; /* Playfair Display 폰트 적용 */
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+}
+
+/* 이미지 업로드 섹션 제목 스타일 */
+.image-upload label {
+  display: block;
+  font-size: 20px; /* 기존보다 살짝 키움 */
+  font-weight: 500;
+  color: #34495e; /* 좀 더 부드러운 네이비 색상 */
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Roboto 폰트 적용 */
+  margin-bottom: 15px;
+  letter-spacing: 0.8px;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+  transition: all 0.3s ease;
+}
+
+.image-upload label:hover {
+  color: #2c3e50; /* 호버 시 약간 더 어두운 색상 */
+  transform: scale(1.05); /* 호버 시 약간 확대 */
+}
+
+/* 이미지 업로드 섹션 */
+.image-dropzone {
+  width: 250px;
+  height: 250px;
+  border: 2px dashed #bfc7d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* 삭제 버튼 위치를 위해 상대 위치 설정 */
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 15px auto; /* 중앙 정렬 및 간격 추가 */
+  background-color: #f9fbfd;
+}
+
+.image-dropzone:hover {
+  background-color: #eef3f9;
+  border-color: #5e85b0;
+}
+
+.image-dropzone img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 삭제 버튼 스타일 */
+.delete-image-btn {
+  position: absolute;
+  top: 5px; /* 이미지 내부 상단 */
+  right: 5px; /* 이미지 내부 오른쪽 */
+  width: 36px;
+  height: 36px;
+  background-color: #ff6b6b; /* 부드러운 레드톤 */
+  color: #ffffff; /* 텍스트 색상: 화이트 */
+  border: none;
+  border-radius: 50%;
+  display: flex; /* Flexbox로 중앙 정렬 */
+  align-items: center; /* 수직 정렬 */
+  justify-content: center; /* 수평 정렬 */
+  cursor: pointer;
+  font-size: 16px; /* 텍스트 크기 */
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(255, 107, 107, 0.3); /* 부드러운 그림자 효과 */
+  transition: all 0.3s ease;
+}
+
+.delete-image-btn:hover {
+  background-color: #ff4d4d; /* 호버 시 약간 더 어두운 레드톤 */
+  color: #ffffff; /* 호버 시 텍스트 색상 유지 */
+  box-shadow: 0px 6px 12px rgba(255, 77, 77, 0.4); /* 호버 시 그림자 강조 */
+  transform: scale(1.1); /* 호버 시 크기 확대 */
+}
+
+.delete-image-btn:active {
+  background-color: #cc3b3b; /* 클릭 시 더 어두운 레드톤 */
+  color: #f8f8f8; /* 클릭 시 텍스트 색상 약간 밝게 */
+  transform: scale(0.95); /* 클릭 시 크기 축소 */
+}
+
+/* 입력 필드 스타일 */
+.form-field {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #d0d7e0;
+  border-radius: 6px;
+  background-color: #f8fafc;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #5e85b0;
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(94, 133, 176, 0.2);
+}
+/* 상세 설명 텍스트 영역 스타일 */
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #d0d7e0;
+  border-radius: 6px;
+  background-color: #f8fafc;
+  resize: none; /* 사용자가 크기를 조정하지 못하도록 설정 */
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #5e85b0;
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(94, 133, 176, 0.2);
+}
+
+textarea::placeholder {
+  color: #b0bec5; /* 플레이스홀더 색상 */
+  font-style: italic;
+}
+
+/* 상세 설명 필드 반응형 디자인 */
+@media (max-width: 768px) {
+  textarea {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+/* 상품 등록 초기화 버튼 */
+.reset-form-btn {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.reset-form-btn:hover {
+  background-color: #e74c3c;
+  transform: scale(1.05);
+}
+
+.reset-form-btn:active {
+  background-color: #c0392b;
+  transform: scale(0.95);
+}
+
+/* 사이즈 삭제 버튼 */
+.delete-size-btn {
+  background-color: #e74c3c; /* 다른 색상 (빨간색) */
+  color: white;
+  padding: 14px; /* 기본 버튼과 동일한 크기 */
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%; /* 기본 버튼과 동일한 너비 */
+  transition: all 0.3s ease;
+}
+
+.delete-size-btn:hover {
+  background-color: #c0392b; /* 호버 색상 */
+  transform: scale(1.05); /* 호버 시 크기 확대 */
+}
+
+.delete-size-btn:active {
+  background-color: #a93226; /* 클릭 시 색상 */
+  transform: scale(0.95); /* 클릭 시 크기 축소 */
+}
+
+/* 기본 버튼 스타일 */
+button {
+  background-color: #5e85b0;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #507aa0;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(94, 133, 176, 0.2);
+}
+
+button:active {
+  background-color: #45688e;
+  transform: translateY(0px);
+  box-shadow: none;
+}
+
+/* 에러 메시지 */
+.error-message {
+  color: #d9534f;
+  background-color: #f8d7da;
+  border: 1px solid #f5c2c7;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .product-register {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .form-field input,
+  .form-field select {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .image-dropzone {
+    width: 200px;
+    height: 200px;
+  }
+
+  .delete-image-btn {
+    width: 35px;
+    height: 35px;
+    top: 5px;
+    right: 5px;
+  }
+}
